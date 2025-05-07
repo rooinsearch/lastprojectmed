@@ -27,6 +27,6 @@ urlpatterns = [
     path('api/cart/', include('cart.urls')),
     path('api/healthtips/', include('healthtips_new.urls')),
     path('api/notifications/', include('notifications.urls')),
-    path('api/checkai/', include('checkAI.urls'))
+    # path('api/checkai/', include('checkAI.urls'))
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
