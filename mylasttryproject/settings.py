@@ -221,10 +221,6 @@ CSRF_TRUSTED_ORIGINS = [
 FRONTEND_URL = 'http://localhost:5000' 
 LOGIN_REDIRECT_URL = "http://localhost:5000/profile"  # Куда перенаправлять после успешного входа
 
-GOOGLE_CLIENT_ID=env('GOOGLE_CLIENT_ID')
-GOOGLE_CLIENT_SECRET=env('GOOGLE_CLIENT_SECRET')
-SOCIAL_AUTH_PASSWORD=env('SOCIAL_PASSWORD')
-
 
 OTP_EXPIRE_MINUTES = 5 
 CACHES = { # need to work with redis
@@ -234,5 +230,5 @@ CACHES = { # need to work with redis
     }
 }
 
-ANONYMOUS_CHAT_LIMIT = 3  # Максимум 3 анонимных чата с IP/сутки
-ANONYMOUS_CHAT_LIFETIME = 7  # Дней хранения анонимных чатов
+# ANONYMOUS_CHAT_LIMIT = 3  # Максимум 3 анонимных чата с IP/сутки
+# ANONYMOUS_CHAT_LIFETIME = 7  # Дней хранения анонимных чатов
